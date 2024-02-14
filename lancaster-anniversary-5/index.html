@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lancaster's 5th Anniversary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .cursive-font {
+        font-family: "Great Vibes", cursive;
+      }
+
+      .hand-font {
+        font-family: "Just Another Hand", cursive;
+      }
+
+      /* CSS for the fade transition */
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 1s; /* You can adjust the duration here */
+      }
+      .fade-enter-from,
+      .fade-leave-to {
+        opacity: 0;
+      }
+      .fade-enter-to,
+      .fade-leave-from {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="flex flex-col justify-between w-full h-screen bg-gradient-to-br from-red-400 to-teal-400"
+      >
+        <!-- nav -->
+        <div
+          class="bg-gradient-to-br from-blue-400 to-red-400 p-5 text-white text-center sticky top-0"
+        >
+          <h1 class="text-lg">Happy Valentines Day Babes!</h1>
+        </div>
+
+        <div class="w-full p-5 flex-1 overflow-y-auto">
+          <div class="bg-white rounded-lg">
+            <p class="hand-font p-5 text-3xl">
+              I know things have been pretty rocky recently. I'm sorry for that.
+              I'm really trying to seek God as much as I can so he can make me
+              who I'm suppose to be for you. Anything I'm lacking I know he will
+              eventually supply. He's causing us to become more like him as time
+              goes on. I'm very greatful to see that you are growing in a lot of
+              ways I didn't expect. I'm so proud of all the progress you have
+              made in your walk with God. I see see you becoming more and more
+              of a Godly woman even with all the things that have been going on
+              I do see.
+
+              <br />
+              <br />
+
+              With Beckham now, I'm also seeing you become a great mother. If
+              you were ever worried you wouldn't be, I can assure you that you
+              are.
+
+              <br />
+              <br />
+
+              One thing that's been on my mind recently... is that my life is
+              not my own and I have to be willing to give it up for you and
+              Beckham. I'm not perfect but I'm trying to be better. If I can
+              just learn to put God before everyone then I can be the husband
+              and father you need me to be. I've already tried on my own and it
+              doesn't work. I need God to help me. I'm want to be more patient
+              and understanding. I desire to be more loving and kind. I look
+              forward to the day that I can be more selfless and sacrificial.
+              The list really goes on and on. I'm just trying to be better for
+              you and our family. I'm trying to be more like Jesus.
+
+              <br />
+              <br />
+
+              I pray God gives you the patience you need with me and that that
+              he keeps us in unity and love. I pray that we can continue to grow
+              in our marriage but most importantly in our walks with Him and so
+              we can be a the best example to our son.
+
+              <br />
+              <br />
+
+              God has been so good to us. He's blessed us with more than enough
+              now to where we can eventually acheive all the Goals we have set.
+              Now we just have to learn to prioritize the intangible things like
+              our relationship. The way we speak to eachother. And lifting
+              eachother up.
+
+              <br />
+              <br />
+
+              I pray you can always find it in your heart to forgive me when I
+              fall short.
+
+              <br />
+              <br />
+
+              Anyways... I love you and Beckham so much and I'm happy and
+              greatful to be able to celebrate this valentines day with you
+              both.
+            </p>
+            <div class="w-full text-center">
+              <button
+                @click="showPromise = !showPromise"
+                class="p-3 bg-blue-400 rounded-lg text-white mb-5"
+              >
+                A Promise That I Continue to Hold Onto For Us
+              </button>
+              <transition name="fade">
+                <div
+                  v-show="showPromise === true"
+                  class="p-5 bg-purple-500 text-white"
+                >
+                  <p class="italic">
+                    So they are no longer two, but one flesh. Therefore what God
+                    has joined together, let no one separate.” - Matthew 19:6
+                  </p>
+                </div>
+              </transition>
+            </div>
+
+            <p class="hand-font p-5 text-3xl">
+              Your's Truly,
+              <br />
+              Husband Babes
+            </p>
+
+            <!-- signature -->
+            <div class="cursive-font text-5xl p-3 underline">
+              - Nick Lancaster
+            </div>
+          </div>
+
+          <!-- body -->
+          <div class="w-full p-5 flex-1 overflow-y-auto">
+            <!-- anniversary card
+          <div class="bg-white rounded-lg">
+            <p class="hand-font p-5 text-3xl">Happy Anniversary Babe!</p>
+
+            <p class="hand-font p-5 text-3xl">
+              We've made it to the 5 year hump! I'm so happy that we've been
+              able to make it this far. According to what statistics say, we are
+              much more likely to live out a lifelong marriage once a married
+              couple has hit this milestone. I'm so greatful to God for bringing
+              us together and for keeping us together (I know we've had a lot of
+              things we've felt at times but God has been faithful to his
+              promise).
+            </p>
+            <div class="w-full text-center">
+              <button
+                @click="showPromise = !showPromise"
+                class="p-3 bg-blue-400 rounded-lg text-white mb-5"
+              >
+                Matthew 19:6
+              </button>
+              <transition name="fade">
+                <div
+                  v-show="showPromise === true"
+                  class="p-5 bg-purple-500 text-white"
+                >
+                  <p class="italic">
+                    So they are no longer two, but one flesh. Therefore what God
+                    has joined together, let no one separate.”
+                  </p>
+                </div>
+              </transition>
+            </div>
+
+            <p class="hand-font p-5 text-3xl">
+              I know I have my issues but you continue to love me anyway.
+              There's a lot that I'm not worthy of but you continue to show me
+              underserved grace in so many areas of our marriage. I'm so
+              grateful for you and happy that you're my wife. I love you so much
+              and I can't wait to see what the future holds for us. We still
+              have so many years to come!
+            </p>
+
+            <p class="hand-font p-5 text-3xl">
+              I thank God for you all the time. If it wasn't for you I wouldn't
+              be who I am today (Not that I'm anything significant but you have
+              made me a better man in so many ways).
+            </p>
+
+            <p class="hand-font p-5 text-3xl">
+              I have so much joy in my heart when I practice gratitude for you
+              and our marriage and now with our little baby boy, I'm more filled
+              with love than I have ever been.
+            </p>
+
+            <p class="hand-font p-5 text-3xl">
+              Since he's been born my focus on working harder has improved and
+              i've also become more efficient where work is concerned. Things
+              don't seem so hard when I'm doing them for Him and you (I guess
+              that's one of the ways God uses our children to change us for the
+              better).
+            </p>
+
+            <p class="hand-font p-5 text-3xl">
+              Let us always remain greatful for one another, continue to pray
+              for and with one another as best we can while also granting the
+              grace that each other needs (I know I need a lot of it now)
+            </p>
+
+            
+
+          -->
+
+            <!-- images -->
+            <!-- <div class="flex flex-row justify-between p-5">
+              <button
+                @click="lastPic()"
+                class="p-3 bg-blue-400 rounded-lg text-white rounded-r-none"
+              >
+                Last
+              </button>
+              <div>
+                <div
+                  class="w-50 h-50 overflow-hidden"
+                  v-for="(pic, i) in pics"
+                  v-show="activePic === pic"
+                  :key="i"
+                >
+                  <img class="" :src="'./pics/pic' + `${pic}` + '.jpg'" />
+                </div>
+              </div>
+              <button
+                @click="nextPic()"
+                class="p-3 bg-blue-400 rounded-lg text-white rounded-l-none"
+              >
+                Next
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const { ref } = Vue; // Destructure ref from Vue
+
+      // Define a reactive variable
+      const showPromise = ref(false);
+
+      const activePic = ref(1);
+
+      const pics = ref([1, 2, 3, 4, 5, 6]);
+
+      const nextPic = () => {
+        if (activePic.value === pics.length) {
+          activePic.value = 1;
+        } else {
+          activePic.value++;
+        }
+      };
+
+      const lastPic = () => {
+        if (activePic.value === 1) {
+          activePic.value = pics.length;
+        } else {
+          activePic.value--;
+        }
+      };
+
+      // Mount Vue application to #app element
+      Vue.createApp({
+        setup() {
+          return {
+            showPromise,
+            pics,
+            activePic,
+            nextPic,
+            lastPic,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
